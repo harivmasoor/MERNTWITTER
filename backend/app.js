@@ -7,7 +7,6 @@ const csurf = require('csurf');
 /* --- Need to import these to load the models into mongoose --- */
 require('./models/User');
 require('./models/Tweet');
-require('dotenv').config();
 /* ------------------------------------------------------------- */
 require('./config/passport'); // Need to import to configure passport module
 const passport = require('passport');
@@ -99,4 +98,3 @@ app.use((err, req, res, next) => {
 });
 
 module.exports = app;
-
