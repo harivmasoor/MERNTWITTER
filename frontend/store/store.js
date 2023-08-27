@@ -6,8 +6,10 @@ import session from './session';
 import errors from './errors';
 
 const rootReducer = combineReducers({
-    session
+    tweets,
+    session,
     errors
+    
 });
 
 let enhancer;
