@@ -1,5 +1,11 @@
 // backend/app.js
+
+require('./models/User');
+
 const debug = require('debug');
+
+
+const usersRouter = require('./routes/api/users');
 
 const express = require("express");
 const cookieParser = require('cookie-parser');
